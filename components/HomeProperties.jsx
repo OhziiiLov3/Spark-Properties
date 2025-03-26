@@ -8,7 +8,7 @@ import Property from "@/models/Property";
 const HomeProperties =  async() => {
     await connectDB()
     const recentProperties = await Property.find({}).sort({createAt: -1}).limit(3).lean();
-    console.log(recentProperties)
+   
     return ( 
         <>
         <section className='px-4 py-6'>

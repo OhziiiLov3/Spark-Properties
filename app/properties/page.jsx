@@ -8,7 +8,7 @@ const PropertiesPage = async () => {
         await connectDB();
         const properties = await Property.find({}).lean();
     
-         console.log(properties)
+   
     
    
     return ( 
