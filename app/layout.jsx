@@ -1,6 +1,7 @@
 import '@/assets/styles/globals.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import AuthProvider from '@/components/AuthProvider';
 
 export const metadata = {
   title: 'Spark Properties',
@@ -14,6 +15,7 @@ export const metadata = {
 
 const MainLayout = ({children}) => {
   return (
+    <AuthProvider>
     <html>
       <body suppressHydrationWarning={true}>
         <Navbar/>
@@ -21,6 +23,7 @@ const MainLayout = ({children}) => {
         <Footer/>
       </body>
     </html>
+    </AuthProvider>
   );
 };
 
