@@ -1,4 +1,4 @@
-import GoogleProvider from " next-auth/providers/google";
+import GoogleProvider from "next-auth/providers/google";
 
 export const authOptions = {
   providers: [
@@ -6,7 +6,7 @@ export const authOptions = {
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SERCET,
       authorization: {
-        parasm: {
+        params: {
           prompt: "consent",
           access_type: "offline",
           response_type: "code",
@@ -24,9 +24,9 @@ export const authOptions = {
     },
     //Session callback function that modifies the session object
     async session({ session }) {
-      // 1 Get user from db 
-      // 2 assign user id from the session 
-      // return the session 
+      // 1 Get user from db
+      // 2 assign user id from the session
+      // return the session
     },
   },
 };
