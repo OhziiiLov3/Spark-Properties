@@ -8,7 +8,7 @@ const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
   weight: ['500', '700'], 
-  variable: 'fontFamily',
+  variable: '--font-poppins',
 });
 
 
@@ -25,7 +25,7 @@ export const metadata = {
 const MainLayout = ({children}) => {
   return (
     <AuthProvider>
-    <html suppressHydrationWarning={true} className={poppins.className}>
+    <html  className={poppins.className}>
       <body>
         <Navbar/>
         <main>{ children }</main>

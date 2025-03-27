@@ -1,13 +1,13 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
 @theme inline {
-  --font-main: var(fontFamily)
-}
+  --font-main: var(--font-poppins)
+} */
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -16,12 +16,12 @@
   }
 } */
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(fontFamily)
+  font-family: var(--font-poppins)
 
-}
+} */
 
 
  /* --color-background: var(--background);

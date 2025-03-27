@@ -17,7 +17,7 @@ export const authOptions = {
         })
       ],
   callbacks: {
-    // invoked on successful dign in
+    // invoked on successful sign in
     async signIn({ profile }) {
       // 1 connect to db
       await connectDB();
@@ -25,7 +25,7 @@ export const authOptions = {
       const userExists = await User.findOne({ email: profile.email });
       // 3 if not create user
       if (!userExists) {
-        // truncate username if too long
+        // slice/truncate username if too long
         const username = profile.name.slice(0, 20);
 
         await User.create({
