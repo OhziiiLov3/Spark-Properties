@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-poppins)', 'sans-serif'], // Use the CSS variable
       },
+      gridTemplateColumns: {
+        '70/30': '70% 28%',
+      },
     },
   },
   plugins: [],
