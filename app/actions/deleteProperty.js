@@ -29,7 +29,7 @@ async function deleteProperty(propertyId) {
     return parts.at(-1).split(".").at(0);
   });
   // 2. delete images from cloidnary
-  if (publicIds.lenght > 0) {
+  if (publicIds.length > 0) {
     for (let publicId of publicIds) {
       await cloudinary.uploader.destroy("sparkproperties/" + publicId);
     }
