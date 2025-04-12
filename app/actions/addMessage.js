@@ -5,7 +5,7 @@ import { getSessionUser } from "@/utlis/getSessionUser";
 
 
 
-async function addMessage(formData) {
+async function addMessage(previousState, formData) {
   await connectDB();
 
   const sessionUser = await getSessionUser();
