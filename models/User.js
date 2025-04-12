@@ -22,7 +22,7 @@ const UserSchema = new Schema({
     ]
 
 },{
-    timeStamps: true,
+    timestamps: true
 });
 
 const User = models.User || model('User', UserSchema)

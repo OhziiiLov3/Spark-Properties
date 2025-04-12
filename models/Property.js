@@ -62,7 +62,7 @@ const PropertySchema = new Schema(
     },
   },
   {
-    timeStamps: true,
+    timestamps: true,
   }
 );
 
