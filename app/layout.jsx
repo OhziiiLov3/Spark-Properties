@@ -2,6 +2,7 @@ import '@/assets/styles/globals.css';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import AuthProvider from '@/components/AuthProvider';
+import {GlobalProvider} from '@/context/GlobalContext';
 import { Poppins } from 'next/font/google';
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -27,6 +28,7 @@ export const metadata = {
 const MainLayout = ({children}) => {
   return (
     <AuthProvider>
+      <GlobalProvider>
     <html  className={poppins.className}>
       <body>
         <Navbar/>
@@ -35,6 +37,7 @@ const MainLayout = ({children}) => {
         <ToastContainer/>
       </body>
     </html>
+      </GlobalProvider>
     </AuthProvider>
   );
 };
