@@ -2,16 +2,20 @@ import PropertyCard from '@/components/PropertyCard';
 // import propertiesData from '@/properties.json'
 import connectDB from '@/config/database';
 import Property from '@/models/Property';
+import Pagination from '@/components/Pagination';
+
 
 const PropertiesPage = async ({searchParams}) => {
-
+    console.log("searchParams:", searchParams);
         await connectDB();
         const page = parseInt(searchParams?.page || "1");
-        const pageSize = parseInt(searchParams?.pageSize || "2");
+        const pageSize = parseInt(searchParams?.pageSize || "9");
     
         const skip = (page - 1 ) * pageSize;
         const total = await Property.countDocuments({});
         const properties = await Property.find({}).skip(skip).limit(pageSize);
+
+        const showPagination = total > pageSize;
     
     return ( 
         <section className='px-4 py-6'>
@@ -24,6 +28,9 @@ const PropertiesPage = async ({searchParams}) => {
                                 <PropertyCard key={property._id} property={property} />
                             ))}
                     </div>
+                )}
+                {showPagination && (
+                <Pagination page={parseInt(page)} pageSize={parseInt(pageSize)} totalItems={total}/>
                 )}
             </div>
         </section>
