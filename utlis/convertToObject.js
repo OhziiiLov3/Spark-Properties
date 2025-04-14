@@ -1,10 +1,29 @@
 
 
-export function convertToSerializableObject(leanDocument){
-    for(const key of Object.keys(leanDocument)){
-        if(leanDocument[key].toJSON && leanDocument[key].toString()){
-            leanDocument[key] = leanDocument[key].toString();
+
+
+export function convertToSerializableObject(leanDocument) {
+    if (!leanDocument || typeof leanDocument !== 'object') {
+        return {}; 
+    }
+
+    for (const key of Object.keys(leanDocument)) {
+        const value = leanDocument[key];
+        if (value && value.toJSON && value.toString) {
+            leanDocument[key] = value.toString();
         }
     }
-    return leanDocument
+
+    return leanDocument;
 }
+
+
+// export function convertToSerializableObject(leanDocument){
+//     for(const key of Object.keys(leanDocument)){
+//         const value = leanDocument[key];
+//         if(value && value.toJSON && value.toString()){
+//             leanDocument[key] = value.toString();
+//         }
+//     }
+//     return leanDocument
+// }
