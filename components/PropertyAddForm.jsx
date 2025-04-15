@@ -21,7 +21,7 @@ const PropertyAddForm = () => {
             <option value="Apartment">Apartment</option>
             <option value="Condo">Condo</option>
             <option value="House">House</option>
-            <option value="CabinOrCottage">Cabin or Cottage</option>
+            <option value="Cabin or Cottage">Cabin or Cottage</option>
             <option value="Room">Room</option>
             <option value="Studio">Studio</option>
             <option value="Other">Other</option>
