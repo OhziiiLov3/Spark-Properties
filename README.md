@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spark Properties - Next.js Application 
 
-## Getting Started
+## Application: Spark Properties | Real-World Property Rental Webiste
+**By:** Keith L. Baskerville Jr.
 
-First, run the development server:
+## Technologies
+- **Frontend:** Next.js 15, React
+- **Styling:** Tailwind CSS v4
+- **Backend:** Server Actions
+- **Database:** MongoDB with Mongoose
+- **Authentication:** Next Auth with Google Provider
+- **API & Media Integration:** Cloudinary, Mapbox
+- **Deployment:** Vercel
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Image](https://i.imgur.com/LiUeHSC.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Deployed Application:** [Spark Properties Deployed Site](https://spark-properties.vercel.app/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Core Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Authentication & Authorization**
+- User authentication with Google & Next Auth
+- Secure authorization and route protection
+- Custom user profiles with associated property listings
 
-## Learn More
+### **Property Listings**
+- Full CRUD for property listings
+- Multiple image upload support
+- Image hosting and optimization with Cloudinary
+- Bookmark or save properties
+- Share properties on social media platforms
 
-To learn more about Next.js, take a look at the following resources:
+### **Location & Search**
+- Search functionality for properties
+- Interactive Mapbox integration
+- Location geocoding with React Geocode
+- Responsive pagination for property search results
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Internal Messaging**
+- Built-in internal messaging system
+- 'Unread' message badge notifications
+- Real-time user-to-user communication
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **UI & Media**
+- Photoswipe-powered image gallery for listings
+- Smooth UI feedback with loading spinners (React Spinners)
+- Toast notifications using React Toastify
+- Responsive mobile-first design with Tailwind CSS
+- Custom 404 error page
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Packages & Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js 15**
+- **React**
+- **Tailwind CSS v4**
+- **MongoDB & Mongoose**
+- **Next Auth**
+- **React Icons**
+- **Photoswipe**
+- **Cloudinary**
+- **Mapbox & React Map GL**
+- **React Geocode**
+- **React Spinners**
+- **React Toastify**
+- **React Share**
+
+---
+
+## What I Learned
+
+- Learn the fundamentals of Next.js server-side vs client-side components for full-stack development  
+- Build a real-world property rental platform from scratch  
+- Implement file-based routing, server components, data fetching, and API routes  
+- Set up authentication and authorization with Next Auth and Google Provider  
+- Use MongoDB and Mongoose in server actions  
+- Build features including internal messaging, bookmarks, search, image galleries, and pagination  
+- Optimize and store images using Cloudinary
+
+## Deployment
+- **Deployed Application:** [Spark Properties Deployed Site](https://spark-properties.vercel.app/)
+
+## Watch Demo Here
+[▶️ Watch Demo](https://github.com/user-attachments/assets/d012a051-609d-47dd-a8ad-d25b918ac6b7)
+
+### See More Projects 
+[Portfolio](https://keithbaskerville-dev.netlify.app/)
